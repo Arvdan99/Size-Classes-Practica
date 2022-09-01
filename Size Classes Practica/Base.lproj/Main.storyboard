@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Size_Classes_Practica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQ6-7Y-yXA">
+                                <rect key="frame" x="0.0" y="0.0" width="313.5" height="414"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=compact">
+                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pj9-ON-aCU">
+                                <rect key="frame" x="313.5" y="0.0" width="582.5" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=compact">
+                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.35" id="7T7-Qp-2iV"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lck-hz-1sx"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LeV-4b-gxB"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OTv-dq-K31"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R1V-M1-hN0"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SCA-PY-jyz"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y5G-NX-hei"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aNM-qL-WC4"/>
+                            <constraint firstAttribute="trailing" secondItem="pj9-ON-aCU" secondAttribute="trailing" id="cIT-Io-pnb"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="ePp-Il-LjB"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="erJ-RJ-bXs"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gc0-sm-GvG"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kdT-DW-M5f"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.35" id="oF2-RC-rWA"/>
+                            <constraint firstItem="iQ6-7Y-yXA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="qUR-0Z-HlK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iQ6-7Y-yXA" secondAttribute="trailing" constant="9" id="rhJ-V1-8zf"/>
+                            <constraint firstItem="pj9-ON-aCU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sZh-9i-TNe"/>
+                            <constraint firstAttribute="trailing" secondItem="pj9-ON-aCU" secondAttribute="trailing" id="uDb-pk-eyh"/>
+                            <constraint firstAttribute="bottom" secondItem="pj9-ON-aCU" secondAttribute="bottom" id="xac-al-Oup"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LeV-4b-gxB"/>
+                                <exclude reference="SCA-PY-jyz"/>
+                                <exclude reference="Y5G-NX-hei"/>
+                                <exclude reference="oF2-RC-rWA"/>
+                                <exclude reference="rhJ-V1-8zf"/>
+                                <exclude reference="7T7-Qp-2iV"/>
+                                <exclude reference="aNM-qL-WC4"/>
+                                <exclude reference="cIT-Io-pnb"/>
+                                <exclude reference="erJ-RJ-bXs"/>
+                                <exclude reference="sZh-9i-TNe"/>
+                                <exclude reference="uDb-pk-eyh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Lck-hz-1sx"/>
+                                <include reference="LeV-4b-gxB"/>
+                                <exclude reference="OTv-dq-K31"/>
+                                <exclude reference="R1V-M1-hN0"/>
+                                <include reference="SCA-PY-jyz"/>
+                                <include reference="Y5G-NX-hei"/>
+                                <include reference="oF2-RC-rWA"/>
+                                <exclude reference="qUR-0Z-HlK"/>
+                                <exclude reference="rhJ-V1-8zf"/>
+                                <include reference="7T7-Qp-2iV"/>
+                                <include reference="aNM-qL-WC4"/>
+                                <exclude reference="cIT-Io-pnb"/>
+                                <exclude reference="ePp-Il-LjB"/>
+                                <include reference="erJ-RJ-bXs"/>
+                                <exclude reference="gc0-sm-GvG"/>
+                                <exclude reference="kdT-DW-M5f"/>
+                                <exclude reference="sZh-9i-TNe"/>
+                                <include reference="uDb-pk-eyh"/>
+                                <exclude reference="xac-al-Oup"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
